@@ -1,4 +1,7 @@
-## DEPRECATION NOTICE
+Forked from matthewbdaly/laravel-azure-storage for personal use
+
+One intended change is to not automatically add the container name to the url generation to better align with other drivers (to make it easier to get consistent paths between this drive and local for example), otherwise this is just to make sure my existing projects that use this continue working.
+
 
 This package is dependent on Flysystem's Azure Blob Storage integration. The creator of that has announced that because Microsoft are dropping support for their PHP storage client, he will also be dropping Azure support from Flysystem in 2024.
 
@@ -12,11 +15,7 @@ This is a custom driver for [Laravel's File Storage API](https://laravel.com/doc
 
 # Installation
 
-Install the package using composer:
-
-```bash
-composer require matthewbdaly/laravel-azure-storage
-```
+NOT SET UP FOR COMPOSER AT THIS TIME
 
 Then add this to the `disks` section of `config/filesystems.php`:
 
